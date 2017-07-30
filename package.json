@@ -35,10 +35,17 @@
     "typescript": "2.3.4"
   },
   "cordovaPlugins": [
+<<<<<<< HEAD
     "cordova-plugin-whitelist",
     "cordova-plugin-device",
     "cordova-plugin-statusbar",
     "cordova-plugin-console",
+=======
+    "cordova-plugin-console",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device",
+>>>>>>> d46a29deb78821b5f0dc8c235590619334227e81
     "cordova-plugin-splashscreen",
     "ionic-plugin-keyboard"
   ],
