@@ -28,20 +28,38 @@
     "ionicons": "3.0.0",
     "rxjs": "5.4.0",
     "sw-toolbox": "3.6.0",
-    "zone.js": "0.8.12"
+    "zone.js": "0.8.12",
+    "cordova-plugin-console": "1.0.5",
+    "cordova-plugin-device": "1.1.4",
+    "cordova-plugin-splashscreen": "~4.0.1",
+    "cordova-plugin-statusbar": "2.2.2",
+    "cordova-plugin-whitelist": "1.3.1",
+    "ionic-plugin-keyboard": "~2.2.1"
   },
   "devDependencies": {
     "@ionic/app-scripts": "2.1.3",
+    "gulp": "^3.9.1",
+    "sass": "^1.0.0-beta.2",
     "typescript": "2.3.4"
   },
   "cordovaPlugins": [
     "cordova-plugin-whitelist",
+    "cordova-plugin-device",
     "cordova-plugin-statusbar",
-    "cordova-plugin-splashscreen",
     "cordova-plugin-console",
-    "ionic-plugin-keyboard",
-    "cordova-plugin-device"
+    "cordova-plugin-splashscreen",
+    "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "apdionic: An Ionic project"
+  "description": "apdionic: An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-console": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-whitelist": {},
+      "ionic-plugin-keyboard": {}
+    }
+  }
 }
