@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,ViewController } from 'ionic-angular';
+import {TabsPage} from "../tabs/tabs";
 
 @Component({
   selector: 'page-welcome',
@@ -7,8 +8,11 @@ import { NavController } from 'ionic-angular';
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public viewCtrl:ViewController) {
 
   }
-
+  goToRoot(){
+    this.navCtrl.push(TabsPage);
+    this.viewCtrl.dismiss();
+  }
 }
