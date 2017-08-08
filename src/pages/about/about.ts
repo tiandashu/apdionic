@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,App } from 'ionic-angular';
 
 import {WelcomePage} from "../welcome/welcome";
 
@@ -10,11 +10,11 @@ import {WelcomePage} from "../welcome/welcome";
 })
 export class AboutPage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController,public app:App) {
 
   }
 
   showWelcome(){
-    this.navCtrl.push(WelcomePage);
+    this.app.getRootNav().push(WelcomePage);
   }
 }
