@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
 import { ModalController } from 'ionic-angular';
 
-import {LoginPage} from "../login/login";
+import { LoginPage } from "../login/login";
 
 @Component({
-  selector: 'page-welcome',
-  templateUrl: 'welcome.html'
+  selector: 'page-setting',
+  templateUrl: 'setting.html'
 })
-export class WelcomePage {
+export class SettingPage {
 
   constructor(public modalCtrl: ModalController ) {
 
   }
-  goToRoot(){
+
+  logOut() {
     let modal = this.modalCtrl.create(LoginPage);
     modal.present();
   }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { AboutPage } from '../about/about';
+import { SettingPage } from '../setting/setting';
 import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 
@@ -9,11 +9,29 @@ import { HomePage } from '../home/home';
 })
 export class TabsPage {
 
-  tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = ContactPage;
+  tabRoots: Object[];
 
   constructor() {
-
+    this.tabRoots = [
+      {
+        root: HomePage,
+        tabTitle: '主页',
+        tabIcon: 'home',
+        tabNum: 3,
+        tabStyle: 'danger'
+      },
+      {
+        root: ContactPage,
+        tabTitle: '提醒',
+        tabIcon: 'notifications',
+        tabNum: 3,
+        tabStyle: 'secondary'
+      },
+      {
+        root: SettingPage,
+        tabTitle: '设置',
+        tabIcon: 'person'
+      }
+    ];
   }
 }
