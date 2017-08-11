@@ -16,4 +16,5 @@ export class WelcomePage {
     let modal = this.modalCtrl.create(LoginPage);
     modal.present();
   }
+  //TODO 欢迎页不能每次打开的时候加载，安装或者升级后打开
 }

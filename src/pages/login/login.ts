@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ModalController} from 'ionic-angular';
+import { ModalController,ToastController} from 'ionic-angular';
 
 import { TabsPage } from '../tabs/tabs'
 
@@ -15,7 +15,7 @@ import { TabsPage } from '../tabs/tabs'
 })
 export class LoginPage {
 
-  constructor(public modalCtrl: ModalController) {
+  constructor(public modalCtrl: ModalController,public toastCtrl: ToastController) {
   }
 
   /*ionViewDidLoad() {
@@ -23,12 +23,24 @@ export class LoginPage {
   }*/
   logIn(username: HTMLInputElement, password: HTMLInputElement) {
     if (username.value.length == 0) {
-      alert("请输入账号");
+      this.toastCtrl.create({
+        message: '请输入用户名',
+        duration: 2000,
+        position: 'top'
+      }).present();
     } else if (password.value.length == 0) {
-      alert("请输入密码");
+      this.toastCtrl.create({
+        message: '请输入密码',
+        duration: 2000,
+        position: 'top'
+      }).present();
     } else {
       let userinfo: string = '用户名：' + username.value + '密码：' + password.value;
-      alert(userinfo);
+      this.toastCtrl.create({
+        message: userinfo,
+        duration: 2000,
+        position: 'top'
+      }).present();
       let modal = this.modalCtrl.create(TabsPage);
       modal.present();
     }

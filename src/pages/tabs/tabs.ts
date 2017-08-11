@@ -40,8 +40,8 @@ export class TabsPage {
         tabIcon: 'person'
       }
     ];
-    // platform.ready().then(() => {
-    //   this.backButtonService.registerBackButtonAction(this.tabRef);
-    // });
+    this.platform.ready().then(() => {
+      this.backButtonService.registerBackButtonAction(this.tabRef);
+    });
   }
 }
