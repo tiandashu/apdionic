@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 /*service*/
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { HttpModule } from '@angular/http';//然后在 imports 中插入 HttpModule 即可
 import { BackButtonService } from '../providers/backButton.service'
 
 /*component*/
@@ -38,6 +39,7 @@ import { LoginPage } from "../pages/login/login";
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   providers: [
