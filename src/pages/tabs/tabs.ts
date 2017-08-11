@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild } from '@angular/core';
+import { Platform, Tabs } from 'ionic-angular';
+
+
+
+import { BackButtonService } from "../../providers/backButton.service";
 
 import { SettingPage } from '../setting/setting';
 import { ContactPage } from '../contact/contact';
@@ -10,8 +15,10 @@ import { HomePage } from '../home/home';
 export class TabsPage {
 
   tabRoots: Object[];
+  @ViewChild('myTabs') tabRef: Tabs;
 
-  constructor() {
+  constructor(public backButtonService: BackButtonService,
+              private platform: Platform) {
     this.tabRoots = [
       {
         root: HomePage,
@@ -33,5 +40,8 @@ export class TabsPage {
         tabIcon: 'person'
       }
     ];
+    // platform.ready().then(() => {
+    //   this.backButtonService.registerBackButtonAction(this.tabRef);
+    // });
   }
 }
