@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ModalController } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
-import {LoginPage} from "../login/login";
+import {TabsPage} from "../tabs/tabs";
 
 @Component({
   selector: 'page-welcome',
@@ -9,12 +9,11 @@ import {LoginPage} from "../login/login";
 })
 export class WelcomePage {
 
-  constructor(public modalCtrl: ModalController ) {
+  constructor(public navCtrl: NavController ) {
 
   }
   goToRoot(){
-    let modal = this.modalCtrl.create(LoginPage);
-    modal.present();
+    this.navCtrl.push(TabsPage);
   }
   //TODO 欢迎页不能每次打开的时候加载，安装或者升级后打开
 }

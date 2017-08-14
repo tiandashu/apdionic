@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { Http, Response } from '@angular/http';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/toPromise';
 
 @Component({
   selector: 'page-home',
@@ -14,9 +15,8 @@ export class HomePage {
   ionViewDidLoad() {
     // 网络请求
     this.http.request('http://jsonplaceholder.typicode.com/photos')
-      .subscribe((res: Response) => {
-        this.listData = res.json();
-      });
+      .toPromise().then(res=>{this.listData=res.json();})
+      .catch(err=>{ console.log(err);} );
 
   }
 
