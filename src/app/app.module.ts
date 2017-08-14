@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 /*service*/
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {IonicStorageModule} from '@ionic/storage'
 import { HttpModule } from '@angular/http';//然后在 imports 中插入 HttpModule 即可
 import { BackButtonService } from '../providers/backButton.service'
 
@@ -14,7 +15,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { LoginPage } from "../pages/login/login";
+import { LoginPage } from "../pages/user/login/login";
 
 
 
@@ -40,7 +41,8 @@ import { LoginPage } from "../pages/login/login";
   imports: [
     BrowserModule,
     HttpModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot()
   ],
   providers: [
     StatusBar,

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController } from 'ionic-angular';
 
-import { LoginPage } from "../login/login";
+import { LoginPage } from "../user/login/login";
 
 @Component({
   selector: 'page-setting',
