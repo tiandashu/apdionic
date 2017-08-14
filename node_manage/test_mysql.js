@@ -46,11 +46,12 @@ connection.query('select * from userinfo where id=1', function(err, rows, fields
         console.log('[query] - :'+err);
         return;
     }
-    //写个接口123
+  //写个接口123
     express.get('/123',function(req,res){
-        if(req.query.ionic == "tianlu222"){
+      console.log(req);
+      if(req.query.ionic == rows[0].username){//procedure
             res.status(200),
-            res.json(rows[0]);
+            res.json("存在此人");
         }else{
             res.status(200),
             res.send("输入的不对给我重新输入");
