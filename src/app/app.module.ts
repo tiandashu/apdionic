@@ -15,7 +15,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
-import { LoginPage } from "../pages/login/login";
+import { LoginPage } from "../pages/user/login/login";
 
 
 

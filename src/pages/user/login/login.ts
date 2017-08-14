@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ModalController,ToastController,ViewController} from 'ionic-angular';
 
-import { TabsPage } from '../tabs/tabs'
+import { TabsPage } from '../../tabs/tabs'
 
 /**
  * Generated class for the Login page.
