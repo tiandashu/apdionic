@@ -16,6 +16,7 @@ import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from "../pages/user/login/login";
+import { RegisterPage } from "../pages/user/register/register";
 
 
 
@@ -27,7 +28,8 @@ import { LoginPage } from "../pages/user/login/login";
     HomePage,
     TabsPage,
     WelcomePage,
-    LoginPage
+    LoginPage,
+    RegisterPage
   ],
   entryComponents: [
     MyApp,
@@ -36,7 +38,8 @@ import { LoginPage } from "../pages/user/login/login";
     HomePage,
     TabsPage,
     WelcomePage,
-    LoginPage
+    LoginPage,
+    RegisterPage
   ],
   imports: [
     BrowserModule,

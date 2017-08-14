@@ -11,7 +11,7 @@ import { NavController,NavParams} from 'ionic-angular';
   selector: 'page-register',
   templateUrl: 'register.html',
 })
-export class Register {
+export class RegisterPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
