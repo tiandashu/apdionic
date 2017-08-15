@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController,NavParams} from 'ionic-angular';
+import { Http } from '@angular/http';
 
 /**
  * Generated class for the Register page.
@@ -12,10 +13,17 @@ import { NavController,NavParams} from 'ionic-angular';
   templateUrl: 'register.html',
 })
 export class RegisterPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  listData: Object;
+  constructor(public navCtrl: NavController, public http:Http) {
   }
 
-
+  Register(username,password){
+    /*alert(username.value);
+    this.http('http://localhost:3000/123')
+      .subscribe((res:Response)=>{
+        this.listData = res.json();
+        console.log(this.listData);
+      })*/
+  }
 
 }
