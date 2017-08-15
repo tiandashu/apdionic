@@ -1,5 +1,46 @@
 page-login {
-  .toolbar-title-md {
+  .toggle-ios.toggle-checked .toggle-icon {
+    background-color:color($colors,danger)!important;
+  }
+  ion-header {
+    height:170px!important;
+    background: url("../../../assets/images/login_bg.png") no-repeat 0 0;
+    background-size: 100% 100%;
+  }
+  ion-icon{
+    margin-right: 10px;
+  }
+  ion-content{
+    margin-top:50px;
+  }
+  .item-ios,.item-md{
+    padding-right: 16px;
+  }
+  ion-item a{
+    color: color($colors,dark);
+    text-decoration: none;
+  }
+  .forget_pwd {
+    color: color($colors,danger);
+  }
+  .toolbar-background-md,.toolbar-background-ios{
+    background-color: color($colors,danger);
+
+  }
+  ion-col{
     text-align: center;
   }
+  ion-col img{
+    height:30%;
+  }
+  ion-icon::before{
+    color: color($colors,danger);
+  }
+  .item-md.item-block .item-inner{
+    border-bottom: 2px solid color($colors,danger);
+  }
+  .item-ios.item-block .item-inner{
+    border-bottom:0.55px solid color($colors,danger);
+  }
+
 }

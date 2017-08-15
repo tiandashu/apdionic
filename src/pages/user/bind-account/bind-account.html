@@ -1,0 +1,55 @@
+<!--
+  Generated template for the BindAccount page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar >
+    <ion-title>账号绑定</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding style="margin-top:50px;">
+  <p style="text-align: center;font-size:1.7rem;margin-bottom:50px;">绑定手机号，获得更安全的服务</p>
+  <ion-item>
+    <ion-label fixed><ion-icon name="phone-portrait"></ion-icon> 手机号</ion-label>
+    <ion-input type="text" placeholder="手机号" #username></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label fixed><ion-icon name="unlock"></ion-icon> 验证码</ion-label>
+    <ion-input type="password" placeholder="验证码" #password></ion-input>
+  </ion-item>
+
+
+
+
+  <div style="margin-top:50px;">
+    <button ion-button block color="danger" >
+     立即绑定
+    </button>
+  </div>
+  <!--第三方登录-->
+  <div style="margin-top:80px;">
+    <p style="text-align: center;font-size:1.7rem">绑定第三方账号</p>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-33 class="qq">
+          <img src="../../../assets/images/qq.png" alt="">
+          <p>QQ</p>
+        </ion-col>
+        <ion-col width-33>
+          <img src="../../../assets/images/weixin.png" alt="">
+          <p>微信</p>
+        </ion-col>
+        <ion-col width-33>
+          <img src="../../../assets/images/weibo.png" alt="">
+          <p>微博</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

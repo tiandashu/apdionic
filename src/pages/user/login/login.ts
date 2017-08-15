@@ -24,7 +24,7 @@ export class LoginPage {
   logIn(username: HTMLInputElement, password: HTMLInputElement) {
     if (username.value.length == 0) {
       this.toastCtrl.create({
-        message: '请输入用户名',
+        message: '请输入手机号',
         duration: 2000,
         position: 'center'
       }).present();
@@ -35,7 +35,7 @@ export class LoginPage {
         position: 'center'
       }).present();
     } else {
-      let userinfo: string = '用户名：' + username.value + '密码：' + password.value;
+      let userinfo: string = '手机号：' + username.value + '密码：' + password.value;
       this.toastCtrl.create({
         message: userinfo,
         duration: 2000,
