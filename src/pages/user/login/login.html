@@ -4,10 +4,16 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+<!--
+  Generated template for the Register page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title class="toolbar-title-md">登录</ion-title>
+  <ion-navbar >
+    <ion-title>登录</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,11 +21,11 @@
 
 <ion-content padding>
   <ion-item>
-    <ion-label fixed>账号</ion-label>
+    <ion-label fixed><ion-icon name="phone-portrait"></ion-icon> 账号</ion-label>
     <ion-input type="text" placeholder="请输入账号" #username></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label fixed>密码</ion-label>
+    <ion-label fixed><ion-icon name="unlock"></ion-icon> 密码</ion-label>
     <ion-input type="password" placeholder="请输入密码" #password></ion-input>
   </ion-item>
   <ion-item no-lines>
@@ -27,10 +33,21 @@
     <ion-toggle></ion-toggle>
   </ion-item>
 
-  <div style="text-align: center; margin-left: 30px; margin-right: 30px;">
+
+
+  <div margin-top="100px">
     <button ion-button block color="danger" (click)="logIn(username, password)">
       登录
     </button>
   </div>
-
 </ion-content>
+
+
+
+
+
+
+
+
+
+

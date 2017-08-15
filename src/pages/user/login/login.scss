@@ -1,5 +1,16 @@
 page-login {
   .toolbar-title-md {
     text-align: center;
+    color: color($colors,light);
+  }
+  .toolbar-background-md{
+    background-color: color($colors,danger);
+
+  }
+  ion-icon::before{
+    color: color($colors,danger);
+  }
+  .item-md.item-block .item-inner{
+    border-bottom: 2px solid color($colors,danger);
   }
 }

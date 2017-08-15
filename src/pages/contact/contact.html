@@ -5,7 +5,29 @@
     </ion-title>
   </ion-navbar>
 </ion-header>
-
 <ion-content>
-  <button ion-button="" (click)="showWelcome()">点击</button>
+<ion-item>
+  <ion-label>男</ion-label>
+  <ion-checkbox color="dark" checked="true"></ion-checkbox>
+</ion-item>
+<ion-item>
+  <ion-label>女</ion-label>
+  <ion-checkbox disabled="true"></ion-checkbox>
+</ion-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col width-10><ion-icon name="heart"></ion-icon>This column will take 10% of space</ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-list>
+    <ion-item>
+      <ion-input type="text" placeholder="Username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input type="password" placeholder="Password"></ion-input>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
