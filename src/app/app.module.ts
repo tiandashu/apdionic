@@ -17,6 +17,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { LoginPage } from "../pages/user/login/login";
 import { RegisterPage } from "../pages/user/register/register";
+import {BindAccountPage} from "../pages/user/bind-account/bind-account";
 
 
 
@@ -29,7 +30,8 @@ import { RegisterPage } from "../pages/user/register/register";
     TabsPage,
     WelcomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    BindAccountPage
   ],
   entryComponents: [
     MyApp,
@@ -39,7 +41,8 @@ import { RegisterPage } from "../pages/user/register/register";
     TabsPage,
     WelcomePage,
     LoginPage,
-    RegisterPage
+    RegisterPage,
+    BindAccountPage
   ],
   imports: [
     BrowserModule,

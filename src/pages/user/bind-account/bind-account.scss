@@ -1,0 +1,37 @@
+page-bind-account {
+  .toolbar-ios{
+    min-height: 50px;
+  }
+  .toolbar-title-md,.toolbar-title-ios {
+    text-align: center;
+    color: color($colors,light);
+  }
+  .toolbar-background-md,.toolbar-background-ios{
+    background-color: color($colors,danger);
+
+  }
+  ion-icon::before{
+    color: color($colors,danger);
+  }
+  .item-md.item-block .item-inner,.item-ios.item-block .item-inner{
+    border-bottom: 2px solid color($colors,danger);
+  }
+  ion-icon{
+    margin-right: 10px;
+  }
+  .item-ios,.item-md{
+    padding-right: 16px;
+  }
+  ion-col{
+    text-align: center;
+  }
+  ion-col img{
+    height:30%!important;
+  }
+  ion-icon::before{
+    color: color($colors,danger);
+  }
+  .item-ios.item-block .item-inner{
+    border-bottom:0.55px solid color($colors,danger);
+  }
+}
