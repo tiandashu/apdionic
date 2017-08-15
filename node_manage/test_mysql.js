@@ -15,13 +15,11 @@ express.all('*', function(req, res, next) {
     next();
 });
 
-
 //配置服务端口
 var server = express.listen(3000, function () {
     var host = server.address().address;
     var port = server.address().port;
 })
-
 
 //创建一个connection
 var connection = mysql.createConnection({
@@ -40,24 +38,31 @@ connection.connect(function(err){
     console.log('[connection connect]  succeed!');
 });
 
-//执行SQL语句 插入数据
-connection.query('select * from userinfo where id=1', function(err, rows, fields) {
+
+//写个接口register
+express.get('/register',function(req,res){
+  //执行SQL语句 插入数据
+  connection.query('select * from userinfo where username=tianlu', function(err, rows, fields) {
+    console.log(111);
     if (err) {
         console.log('[query] - :'+err);
         return;
-    }
-  //写个接口123
-    express.get('/123',function(req,res){
-      console.log(req);
-      if(req.query.ionic == rows[0].username){//procedure
-            res.status(200),
-            res.json("存在此人");
-        }else{
-            res.status(200),
-            res.send("输入的不对给我重新输入");
-        }
-    });
+      }
+
+    if(req.query.username == rows[0].username){//procedure
+      console.log(222);
+      res.status(200),
+          res.json("存在此人");
+      }else{
+      console.log(333);
+      res.status(200),
+          res.send("输入的不对给我重新输入");
+      }
+     console.log(333);
+  });
+
 });
+
 //关闭connection
 connection.end(function(err){
     if(err){

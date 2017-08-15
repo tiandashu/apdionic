@@ -1,16 +1,16 @@
 page-register {
-  .toolbar-title-md {
+  .toolbar-title-md,.toolbar-title-ios {
     text-align: center;
     color: color($colors,light);
   }
-  .toolbar-background-md{
+  .toolbar-background-md,.toolbar-background-ios{
     background-color: color($colors,danger);
 
   }
   ion-icon::before{
     color: color($colors,danger);
   }
-  .item-md.item-block .item-inner{
+  .item-md.item-block .item-inner,.item-ios.item-block .item-inner{
     border-bottom: 2px solid color($colors,danger);
   }
 }
