@@ -18,7 +18,8 @@ export class RegisterPage {
   }
 
   Register(username,password){
-    this.http.get('http://192.168.3.25:3000/register')
+    var body = {username:username};
+    this.http.post('http://192.168.3.25:3000/register',JSON.stringify(body))
       .subscribe((res:Response)=>{
         console.log(res['_body']);
       })

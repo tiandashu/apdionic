@@ -25,7 +25,7 @@ var server = app.listen(3000, function () {
 
 
 //写个register api
-app.get('/register',function(req,res){
+app.post('/register',function(req,res){
   //创建一个connection 配置数据库信息
   var connection = mysql.createConnection({
     host     : 'localhost',       //主机
