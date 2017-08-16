@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ModalController,ToastController,ViewController} from 'ionic-angular';
 
 import { TabsPage } from '../../tabs/tabs'
+import {RegisterPage} from "../register/register";
 
 /**
  * Generated class for the Login page.
@@ -47,6 +48,8 @@ export class LoginPage {
     }
   }
 
-
+  GoRegister():void{
+    this.modalCtrl.create(RegisterPage).present();
+  }
 
 }

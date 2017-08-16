@@ -7,8 +7,7 @@ import { Storage} from '@ionic/storage'
 
 
 import {WelcomePage} from "../pages/welcome/welcome";
-import {RegisterPage} from "../pages/user/register/register";
-// import {LoginPage} from "../pages/user/login/login";
+import {LoginPage} from "../pages/user/login/login";
 
 
 @Component({
@@ -23,7 +22,7 @@ export class MyApp {
     this.storage.get('firstIn').then((result)=>{
 
       if(result){
-        this.rootPage = RegisterPage;
+        this.rootPage = LoginPage;
       }else {
         this.storage.set('firstIn',true);
         this.rootPage = WelcomePage;
