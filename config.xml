@@ -20,6 +20,7 @@
   <preference name="SplashMaintainAspectRatio" value="true"/>
   <preference name="FadeSplashScreenDuration" value="300"/>
   <preference name="SplashShowOnlyFirstTime" value="false"/>
+  <!--去掉启动页的小圆圈-->
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>

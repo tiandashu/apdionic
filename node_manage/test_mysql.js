@@ -6,7 +6,7 @@ var mysql  = require('mysql');  //调用MySQL模块
 var express = require('express');
 var app = express();
 
-/*设置响应头*/
+/*设置API响应头*/
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
